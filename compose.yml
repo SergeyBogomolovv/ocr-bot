@@ -1,0 +1,6 @@
+services:
+  ocr-bot:
+    image: grekas/ocr-bot:latest
+    restart: unless-stopped
+    env_file:
+      - .env
